@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #101820;
+    font-family: "Courier New", monospace;
+    color: #0ff;
+    margin: 0;
+  }
+  
+  .weather-container {
+    background: #141414;
+    border: 1px solid #0ff;
+    padding: 15px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 5px #00bfa6, 0 0 20px #00bfa6;
+  }
+  
+  .title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .weather-info input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 3px solid #00bfa6;
+    background-color: #2e4f53;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.20s;
+    font-weight: bold;
+  }
+
+  .weather-info input:hover {
+    border: 1px solid #f1f1f1;
+    transform: scale(1.05);
+  }
+
+  .weather-info input:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+  
+  .weather-info button {
+    padding: 8px 18px;
+    background-color:transparent;
+    color: rgb(82, 136, 146);
+    border: 1px solid  #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .weather-info button:hover {
+    color: #ffffff;
+    background: #00bfa6;
+    border: 1px solid #00bfa6;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #00bfa6, 0 0 20px #00bfa6;
+  }
+  
+  .weather-data h2 {
+    margin-top: 15px;
+    font-size: 1.4em;
+  }
+  
+  .weather-data p {
+    font-size: 1.2em;
+    margin: 8px 0;
+  }
