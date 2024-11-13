@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container1">
-        <h1>TIC TAC TOE</h1>
-        <div id="registration-form" class="form">
-            <input type="text" id="player1" placeholder="Enter Player 1 Name" required>
-            <input type="text" id="player2" placeholder="Enter Player 2 Name" required>
-            <button id="start-game">Start Game</button>
-        </div>
-        <div id="game-mode" class="form" style="display: none;">
-            <h2>Choose Game Mode</h2>
-            <button id="player-vs-player">Player vs Player</button>
-            <button id="player-vs-computer">Player vs Computer</button>
-        </div>
-        <div id="game-board" style="display: none;">
-            <h2>Game Board</h2>
-            <div id="board" class="board"></div>
-            <div id="scoreboard" class="scoreboard"></div>
-        </div>
+  <div class="weather-container">
+    <h1 class="title">Current Weather</h1>
+    <div class="weather-info">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button onclick="getWeather()">Get Weather</button>
+      <div class="weather-data">
+        <h2 id="cityName">City: --</h2>
+        <p id="temperature">Temperature: -- °C</p>
+        <p id="description">Condition: --</p>
+        <p id="humidity">Humidity: -- %</p>
+        <p id="windSpeed">Wind Speed: -- km/h</p>
+      </div>
     </div>
-    <div class="container2">
-        <div id="restart-game" class="form" style="display: none;">
-            <button id="restart-game">Restart Game</button>
-        </div>    
-    </div>
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
